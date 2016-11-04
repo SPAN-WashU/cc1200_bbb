@@ -11,7 +11,7 @@ LDFLAGS+=-lpthread -lm
 
 cc1200-objs := cc1200.o
 
-all: clean SPI_bin.h cc1200_xo_sync cc1200_msg cc1200_app dw1000_ref dw1000_sync dw1000_rfs
+all: clean cc1200_app
 
 clean:
 	rm -f cc1200_app *.o
